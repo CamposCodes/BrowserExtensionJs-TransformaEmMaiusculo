@@ -1,0 +1,10 @@
+{
+    "name":"Transforma Maiusculo",
+    "version":"1.0",
+    "description":"Transforma todo o texto em maiúsculo",
+    "browser_action":{
+        "default_popup":"index.html"
+    },
+    
+    "manifest_version":2
+}

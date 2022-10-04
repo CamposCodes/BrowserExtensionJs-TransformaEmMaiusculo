@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Exo+2&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Exo 2', sans-serif;
+    color: black;
+}
+
+:root{
+    --color1: #e6e8e6;
+    --color2: #ffffff;
+    --color3: #f15025;
+    --color4: #f15125a1;
+}
+body{background: var(--color1);}
+
+#all{
+    min-width: 300px;
+    margin: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+#title{
+    margin-bottom: 10px;
+    color: var(--color3);
+
+}
+#text{
+    text-align: center;
+    margin: 10px auto;
+    padding: 5px 10px;
+    border-radius: 10px;
+    border: none;
+    background: var(--color2);
+    margin-bottom: 10px;
+    box-shadow: 5px 5px 30px -3px rgba(0, 0, 0, 0.7);
+    color: var(--color3);
+}
+#text::placeholder{
+    color: var(--color1);
+    text-align: center;
+}
+#text:focus{
+    outline: 0;
+}
+
+#btn{
+    margin: 10px auto;
+    padding: 5px 10px;
+    border-radius: 10px;
+    border: none;
+    background: var(--color3);
+    transition: .4s;
+    color: var(--color2);
+}
+#btn:hover{
+    cursor: pointer;
+    background: var(--color2);
+    color: var(--color3);
+    transform: scale(1.10);
+}
+
+#text-area{
+    background: var(--color2);
+    margin: 10px auto;
+    padding: 5px 10px;
+    border-radius: 10px;
+    border: none;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+#result{
+    color: var(--color3);
+    display: flex;
+    margin: 5px;
+}
+.btn-copy{
+    margin: 10px auto;
+    padding: 5px 10px;
+    border-radius: 10px;
+    border: none;
+    background: var(--color3);
+    transition: .4s;
+    color: var(--color2);
+}
+.btn-copy:hover{
+    cursor: pointer;
+    background: var(--color2);
+    color: var(--color3);
+    transform: scale(1.10);
+}
