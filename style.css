@@ -94,3 +94,18 @@ body{background: var(--color1);}
     color: var(--color3);
     transform: scale(1.10);
 }
+.btn-refresh{
+    margin: 10px auto;
+    padding: 5px 10px;
+    border-radius: 10px;
+    border: none;
+    background: var(--color3);
+    transition: .4s;
+    color: var(--color2);
+}
+.btn-refresh:hover{
+    cursor: pointer;
+    background: var(--color2);
+    color: var(--color3);
+    transform: scale(1.10);
+}

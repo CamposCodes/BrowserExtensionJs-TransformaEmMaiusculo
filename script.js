@@ -32,6 +32,17 @@ document.addEventListener('DOMContentLoaded',function(){
             btnCopy.style.background = "var(--color2)";
             btnCopy.style.color = "var(--color3)";
         }
+        addButtonRefresh();
+    }
+
+    function addButtonRefresh(){
+        let btnRefresh = document.createElement('button');
+        btnRefresh.classList.add('btn-refresh');
+        btnRefresh.textContent = 'transformar outro texto';
+        document.querySelector('#all').appendChild(btnRefresh);
+        btnRefresh.addEventListener('click', function(){
+            window.location.reload();
+        });
     }
 });
 
