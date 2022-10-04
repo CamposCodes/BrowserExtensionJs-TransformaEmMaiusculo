@@ -1,16 +1,8 @@
 
 document.addEventListener('DOMContentLoaded',function(){
     
-    function openTextArea(){
-        let textArea = document.querySelector('#text-area');
-        if(textArea.style.display == 'none'){
-            textArea.style.display = 'flex';
-        }
-        else{
-            textArea.style.display = 'none';
-        }
-    }
-    openTextArea();
+    let textArea = document.querySelector('#text-area');
+    textArea.style.display = 'none';
     
     function upper(text){
         return text.toUpperCase();
@@ -23,15 +15,15 @@ document.addEventListener('DOMContentLoaded',function(){
         let result = document.querySelector('#result');
         
         result.innerHTML = upper(text);
-
+        
         let btnCopy = document.createElement('button');
         btnCopy.classList.add('btn-copy');
         btnCopy.textContent = 'copiar';
         document.querySelector('#text-area').appendChild(btnCopy);
         btnCopy.addEventListener('click', copyText);
-        openTextArea();
+        textArea.style.display = 'flex';
     });
-
+    
     function copyText(){
         let textCopy = result.textContent;
         let btnCopy = document.querySelector('.btn-copy');
